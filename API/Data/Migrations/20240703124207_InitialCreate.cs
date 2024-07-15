@@ -22,16 +22,6 @@ namespace API.Data.Migrations
                 {
                     table.PrimaryKey("PK_Users", x => x.Id);
                 });
-
-            // τον παραπανω κωδικα τον εθεσα εγω επειδη το SQLite: Open Database μου εμφανισε προβλημα
-            migrationBuilder.InsertData(
-                table: "Users",
-                columns: new[] { "Id", "UserName" },
-                values: new object[,]
-                {
-                { "Test" },
-                { "Test1" }
-            });
         }
 
         /// <inheritdoc />
